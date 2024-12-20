@@ -1,0 +1,168 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astronomy - Ancient India's Achievements</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3e5ab; 
+            color: #2c2c2c;
+        }
+
+        header {
+            background: linear-gradient(to right, #6d3f04, #c89021);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        }
+
+        .content {
+            padding: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        h2 {
+            color: #7c4700;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .achievements-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .achievements {
+            background-color: #fdf6e3;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            flex: 1 1 calc(33% - 40px); 
+            max-width: calc(33% - 40px);
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.3s ease, box-shadow 0.3s ease; 
+        }
+
+    
+        .achievements:hover {
+            transform: translateY(-10px); 
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); 
+        }
+
+        .read-more {
+            text-decoration: none;
+            color: white;
+            background-color: #7c4700;
+            padding: 8px 15px;
+            border-radius: 5px;
+            text-align: center;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+            align-self: center;
+        }
+
+        .read-more:hover {
+            background-color: #a35c00;
+        }
+
+   
+        @media (max-width: 768px) {
+            .achievements {
+                flex: 1 1 calc(50% - 20px); 
+                max-width: calc(50% - 20px);
+            }
+
+            h2 {
+                font-size: 1.8em; 
+            }
+        }
+
+        @media (max-width: 480px) {
+            .achievements {
+                flex: 1 1 100%; 
+                max-width: 100%;
+            }
+
+            h2 {
+                font-size: 1.6em; 
+            }
+
+            .read-more {
+                padding: 10px 20px;
+                font-size: 1em;
+            }
+        }
+
+        footer {
+            background-color: #4a2e00; 
+            color: #f8f3e7;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 30px;
+            font-size: 0.9em;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .back-button {
+            display: block;
+            text-decoration: none;
+            color: white;
+            background-color: #7c4700;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-align: center;
+            max-width: 200px;
+            margin: 20px auto;
+            transition: background-color 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #a35c00;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Astronomy - Ancient India's Achievements</h1>
+    </header>
+
+    <div class="content">
+        <h2>Key Achievements in Astronomy</h2>
+
+        <div class="achievements-container">
+            <div class="achievements">
+                <h3>Aryabhata</h3>
+                <p>Aryabhata, one of the greatest mathematicians and astronomers of ancient India, proposed the heliocentric model of the solar system. He accurately calculated the length of the year and provided a formula for the motion of celestial bodies.</p>
+            </div>
+
+            <div class="achievements">
+                <h3>Varahamihira</h3>
+                <p>Varahamihira made significant contributions to astronomy and astrology. He authored the "Brihat Samhita," an encyclopedia of natural sciences, and improved techniques for predicting planetary movements and eclipses.</p>
+            </div>
+
+            <div class="achievements">
+                <h3>Brahmagupta</h3>
+                <p>Brahmagupta described methods for calculating the positions of planets and the nature of solar and lunar eclipses. He also emphasized the spherical shape of the Earth.</p>
+            </div>
+        </div>
+
+        <a href="" class="back-button">Learn more</a>
+        <a href="home.html" class="back-button">Back to Home</a>
+    </div>
+
+</body>
+</html>

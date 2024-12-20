@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ancient India Choices</title>
+    <style>
+        /* Smooth gradient animation for background */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            text-align: center;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background: linear-gradient(45deg, #ff9933, #138808, #ffffff);
+            background-size: 400% 400%;
+            animation: gradientBG 10s ease infinite;
+        }
+
+        @keyframes gradientBG {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        /* Header styles */
+        header {
+            padding: 20px;
+            font-size: 2rem;
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.85);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: bold;
+        }
+
+        /* Card container */
+        .card-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            padding: 40px 20px;
+            flex-grow: 1;
+        }
+
+        /* Card styles */
+        .card {
+            width: 250px;
+            height: 300px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+            text-align: center;
+            padding: 20px;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            margin: 0;
+            color: #5b3f04;
+            font-size: 1.4rem;
+        }
+
+        /* Back button */
+        .back-button {
+            display: inline-block;
+            margin: 40px 800px;
+            padding: 15px 30px;
+            background: #5b3f04;
+            color: #fff;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        .back-button:hover {
+            background: #963f3f;
+            transform: scale(1.1);
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: rgba(0, 0, 0, 0.85);
+            color: #fff;
+            text-align: center;
+            padding: 20px 10px;
+            font-size: 1rem;
+        }
+
+        footer p {
+            margin: 0;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        /* Wrapper for the entire page to avoid repeating background */
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .card-container {
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+            }
+
+            .card {
+                width: 90%;
+                height: auto;
+            }
+            .card p {
+                font-size: 1rem; /* Slightly larger for better readability */
+                color: #444; /* Darker gray for contrast */
+                margin: 10px 0 0; /* Space between heading and description */
+                line-height: 1.6; /* Improved line spacing */
+                text-align: justify; /* Align the text for a clean look */
+                font-weight: 400; /* Normal font weight */
+                padding: 0 10px; /* Padding to keep text from touching edges */
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>Explore Ancient India</h1>
+        </header>
+
+        <!-- Card Container -->
+        <!-- Card Container -->
+<div class="card-container">
+    <!-- Card 1 -->
+    <a href="gallery_astronomy.html">
+        <div class="card">
+            <img src="https://www.culturalindia.net/iliimages/Indian-Textiles-ili-168-ogimg.jpg" alt="Astronomy">
+            <h3>Astronomy</h3>
+            <p>Ancient Indian astronomers made significant contributions, including understanding planetary movements and the solar system.</p>
+        </div>
+    </a>
+
+    <!-- Card 2 -->
+    <a href="gallery_mathematics.html">
+        <div class="card">
+            <img src="https://www.tripsavvy.com/thmb/vyfBz1gaTO9j0gyRRkMQ1meeKas=/2121x1414/filters:fill(auto,1)/GettyImages-493063982-5961cbdd5f9b583f180cf66b.jpg" alt="Mathematics">
+            <h3>Mathematics</h3>
+            <p>India pioneered concepts like zero, algebra, and geometry, influencing global mathematical advancements.</p>
+        </div>
+    </a>
+
+    <!-- Card 3 -->
+    <a href="gallery_technology.html">
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/QtubIronPillar.JPG" alt="Technology">
+            <h3>Technology</h3>
+            <p>Innovations in metallurgy, construction, and tools showcase India's technological prowess in ancient times.</p>
+        </div>
+    </a>
+
+    <!-- Card 4 -->
+    <a href="gallery_medicine.html">
+        <div class="card">
+            <img src="https://www.ayurvedicclinic.net/clinic/wp-content/uploads/2024/02/sage-charaka.webp" alt="Ancient Medicine">
+            <h3>Ancient Medicine</h3>
+            <p>Ayurveda and surgical techniques by Indian sages laid the foundation for modern medical practices.</p>
+        </div>
+    </a>
+</div>
+
+        <!-- Back Button -->
+        <a href="/homepage/home.html" class="back-button">Back</a>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 Ancient Indian Science Exploration</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,184 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathematics - Ancient India's Achievements</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3e5ab; 
+            color: #2c2c2c;
+        }
+
+        header {
+            background: linear-gradient(to right, #6d3f04, #c89021);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        }
+
+        .content {
+            padding: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        h2 {
+            color: #7c4700;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .topics-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .topic-card {
+            background-color: #fdf6e3;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            flex: 1 1 calc(33% - 40px); 
+            max-width: calc(33% - 40px);
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.3s ease;
+        }
+
+        .topic-card:hover {
+            transform: scale(1.05); 
+        }
+
+        .example {
+            background-color: #fff3d4;
+            padding: 10px;
+            margin-top: 10px;
+            border-left: 4px solid #7c4700;
+            border-radius: 5px;
+        }
+
+        .read-more {
+            text-decoration: none;
+            color: white;
+            background-color: #7c4700;
+            padding: 8px 15px;
+            border-radius: 5px;
+            text-align: center;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+            align-self: center;
+        }
+
+        .read-more:hover {
+            background-color: #a35c00;
+        }
+
+       
+        @media (max-width: 768px) {
+            .topic-card {
+                flex: 1 1 calc(50% - 20px); 
+                max-width: calc(50% - 20px);
+            }
+
+            h2 {
+                font-size: 1.8em; 
+            }
+
+            .content {
+                padding: 15px;
+            }
+
+            .read-more {
+                padding: 10px 20px; 
+            }
+        }
+
+        @media (max-width: 480px) {
+            .topic-card {
+                flex: 1 1 100%; 
+                max-width: 100%;
+            }
+
+            h2 {
+                font-size: 1.6em; 
+            }
+
+            .content {
+                padding: 10px;
+            }
+
+            .read-more {
+                padding: 8px 15px;
+                font-size: 0.9em;
+            }
+        }
+
+        .back-button {
+            display: block;
+            text-decoration: none;
+            color: white;
+            background-color: #7c4700;
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-align: center;
+            max-width: 220px;
+            margin: 25px auto;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #a35c00;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mathematics - Ancient India's Achievements</h1>
+    </header>
+
+    <div class="content">
+        <h2>Key achievements in Mathematics</h2>
+
+        <div class="topics-container">
+            <div class="topic-card">
+                <h3>Baudhayana’s Theorem</h3>
+                <p>Baudhayana, an ancient Indian mathematician, described a theorem similar to the Pythagorean theorem in his Sulba Sutras. This is one of the earliest recorded mathematical discoveries.</p>
+                <div class="example">
+                    Example: Prove that in a right triangle, the square of the hypotenuse equals the sum of the squares of the other two sides.
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <h3>Brahmagupta’s Concept of Zero</h3>
+                <p>Brahmagupta was the first to formalize operations with zero. He explained how to add, subtract, and multiply using zero, laying the foundation for modern arithmetic.</p>
+                <div class="example">
+                    Example: Solve 354 - 0 and 0 × 25. Discuss the results.
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <h3>Bhaskara’s Calculus</h3>
+                <p>Bhaskara introduced concepts of calculus, such as derivatives, to explain astronomical calculations. He also developed cyclic methods for solving algebraic equations.</p>
+                <div class="example">
+                    Example: Find the derivative of x² and explain its geometric significance.
+                </div>
+            </div>
+        </div>
+
+        <a href="#" class="back-button">Learn more</a>
+        <a href="home.html" class="back-button">Back to Home</a>
+    </div>
+
+</body>
+</html>
+

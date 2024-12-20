@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Categories</title>
+    <link href="https://fonts.googleapis.com/css2?family=Gotu&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Gotu', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fafafa; /* Light grayish background */
+            color: #333;
+        }
+        header {
+            background-color: #F9A602; /* Ligvy blue header */
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+            font-size: 2em;
+            letter-spacing: 1px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .category {
+            background-color: #fff;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 20px;
+            width: 280px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .category:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .category img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        .category h3 {
+            margin: 10px 0;
+            font-size: 1.4em;
+            color: #F9A602; /* Lightly darker blue for category titles */
+        }
+        .category p {
+            font-size: 1em;
+            color: #555; /* Darker text for readability */
+            margin-bottom: 10px;
+        }
+        .category a {
+            display: inline-block;
+            text-decoration: none;
+            background-color: #EA4C89;
+            color: #fff;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.2s ease;
+        }
+        .category a:hover {
+            background-color: #D13F6E;
+        }
+        footer {
+            background-color: #D8C3A5; /* Lightatching footer color */
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        Welcome to the Quiz Categories
+    </header>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Category: Sutra -->
+        <div class="category">
+            <img src="https://lh3.googleusercontent.com/fife/ALs6j_Eu2cm01WB-UoqBZHoX6msEng8TFd7eE2uCTum7L3-P7ggqjWQ5vHE4-W-bf8GEtjAMYUGA0dQwDS97cvjgULtlhgWbfCj8xWk_e4gqd4zZTXNXcdlX0lcF9t-Ulm7zXML6TUCQ3AgzLXKdXLzoJ8iQGJUzVRMZ8pYm6c1mdZbKcfmyyZbKwwsY_ScpDf_8MDTTpPALzpLH5YEbdn2j7NbqDviTO1g5MMeZGADxumjo6UHHtFz9ex8Wk9Jq9bKWqzeZYvqz5_BrcROsfe2oAI0oSUoNZPRwrJaxr8zrtYeGojpkRwOz8H9QQsl9t13aHUhucoohUmVHbADlt9cOBkaZVCiqljAv7NIn432jlKgdJrckryG0ZMS3muwVJAc77wkxIcYzEahm7rxbGjTwCTGe92iUnfgqaRhj8YxtxLP6RrB0eset1Da7c9UWKgSh5-pcHcDyi9jStE6qD4eCw9QuwGUiZHjfQbgboIbvmwQlpO-RA4DvnuPAyEL58nyFavT9bOyD2W802tme9wktBGkA-2kAaK9Fq-M4kZNoD6mg9E9KFKLtnObmI-XiwKjMUTWePglNXXThwiZZOuEGrchy3yKSKE4LLNfXcNUXCr2IhrpxZZ7T9mqyEgBiv9hc4tAJIU1OE0rVrXS-LSApEK8JJnMxm-Tj7lSU4KxkT5KqRBPEItYrd0hOYs1NpCTGH3IiQuiE0O2jcZvCQ_vgvsBL1KsJl8bQHNjYzvmLbrNkN5IYAnuIsxkczAFXPH7hMnnE7UuQAjtfyBlT9bAss70f5TEeLJ7CsCJee1vSgXLuvsRF30O3rgQIOo6ZPOj1txGAm_rZF5INnmf7VEGvU93bvffMG_aRhh7rLL20YJjl5ewkvn9vWP8F4qkzerVGn97RiwkZvkr2ApzX2P2AxIlO8BgArlPZHNlXPNRAPEOHTmVEu0uOyTLG9yAHfDkVtg55VG69wsozXVqSBNtMeef-Xn-tZ5RbR3zMXgxaaGtphWGe5LGZpNCfRMMgeAuTIPRCZhCMaGZ6fdb4EkKqw524VfZA0RMBEiRaLkNCUfUdLN4-fU5JJSJMKo_zGzrD0Dtw98mKf6QnCcNCjH-IZKK8PH81ef_hY2zVcdCQ6gXgKLIcoWmFBIDXSPoxXJ47gQGA8GHmbClwOR2vAwqeP96BJ8AkCBWakZN8sAe_ERv38HbVOviRRVJJpgM9RO720DxK35CFcWV-xZvk7FEK8t0G6CYN87PKZ0BRY9KdV1BCG8t_xqWfEBoV9TsyKvg9ngddPrC-vdlHWdtan9tJQ0FEt_PwLPPKBRxTlNR6gJ1SPunSIV11omhnVM3A79yr-BNp3xcGlUD_2w9o-5YtzBHfUJK-3LH5978Px6dX0WfttZ2M1pIutpk274sPr9rTfGm9O7xiIUgc5etRnaPIamWgEJJxs-6tKbJypZ5Hqgxnbx7eMdja_cy4JMK9YjS34rARZQpLTiFS03klGqR1OqF3AgNZ41negkbyzW0KFUufAxuZpz44lgEQ6Ga_dvqLQjJCxXgAnw8rVK0wE1rGV3ferWML1vb9Gb236wF1kA8hZ9RC87e0RmRkNSgfhEoCzrVOQ2D4mDL-MTcV3cYje9nFpBLFB4HZgHx2Y01a-EOH1kvhYPW6qK_y5tQUb204fnJrCtvt-ar5do_2BnqzheUjYomexbnaPTeDj7P9BpKbhBsoNivzT291AMUJTqUx1dTxKd_5XM-zA5E_6Uo0Fw=s512" alt="Sutra Image">
+            <h3>Sutra's & Veda's</h3>
+            <p>Explore our quiz related to ancient texts and sutras.</p>
+            <a href="sutra.html" target="_blank">Take Quiz</a>
+        </div>
+
+        <!-- Category: Metals -->
+        <div class="category">
+            <img src="https://lh3.googleusercontent.com/fife/ALs6j_Fx5bHneDcileQ46qNDCEXeyuJvur_un01WouHOdDtU2XNH9pHjAA-H09MV8Uo6UzsHJ1G772UixKq4RAd8i-5NsBfDSstMl7vYTDr7QvrjpjCYEdFcf3h716hGimS4ur9qn10t1-xuxqDplwA5hRVExNnzYPfdOZAopE69-MaM7keYL8qURrPCbvLdIWbcZ7FlZCkO4DaDaxHQVPn_Lu4FbP15ODBBth3I_qIAYci8KEn2t-nMUiLm8nZX1sC-bj7yMr0TVqlCq6vMpchyyevgCWt3lckz0CvYbP6lL6xqxjjHHNXL6lH1Fi0lWZm5RAeBQqHGQx1Ojsw_d8IziIbpliSIRsAuZbQwc4ywcoc6posQzg0sY17kvUGa2bEj5LXwoTLpPu8QHi33jIQ0Ww6BOlV34l2ish-9oTT4v7ouDihkm7TCOBZ8ijNt7gn5TIcXVBcAgA03yG2jTrtG42dmUYrKGVwWq05W6xQpTJU0Uaep2Lh3dBePyF9-2AiAjFFl5Ut4tpF-E7biDHx-6bMKOx6VyMQEc3H9-vOavfMBEtPII7vVkY4CumBba_AJA8pme0sewxBE7-Wy7ZcGtpJMN-64uBIOc_EQsdzP3kFUrwBQa1kx9sVqmAXvrldsnLcKlR1sEkRCCO4PzK0MTUPzZGu286izz5aWkxVMUGYGNN7RBwZZVKBGXXX1bw4nHq0W8FkFc-KPQ_W21HRw6tdB6-NgLEBJ3voY7Xn-_e4RcevYYDmEc6O1oy_yS1CHpYYG2FvgYJuHr2KKF-5GDnvLZ2qmwplD1Rg46-pKcjRvl4qbgkzIRALxJpioS99qy8SoknMrK06UEhSFoM_G4fatqL-MKpkYQrQoQfhEOOJq8eBPYDl3m1Gh8J3ZEa1bdksYwh2n6RaeG0mKJhR6sN77LMbkClwxJljz6LctzFEz61je8Mz-kJaqnYeSHDUawAJxEtEbzeF5QrYfh4NZZ18qL0fU6PL-uNwcoMdx34lAZAInCB1QrLqxzDjuDQ6cA3WkdXafqsFdtL_ytsx8Ai46VrmbVJSnwGNGfkJkWVbWgnFux7ehOhWFszHvoUHO21KjyWUZ-9q_74nWP4UvT9IDjN7t2_B9Ubkv0AKTC7YUPpBVQ7pTu7NFbHuOQ4w41UmfdpwDnT3BkYVuEZx8wI4-fnUSjknCCQ1u20IE4Md3ttPvn08MK3cNOoXIKAmV9EcHE5ptuFXuDCuXK1ZcvwOrMEpJBNpJ3eRckv1QmPy6XBXI1WcaSRckToUwkKWJSm4UNi60Y3YB2LRsLekvbSbQgNoY6nKI7broY2iL4H9_AJRmPOT-cR18r8OmqlNN9yLY2hLX97kHDvTVmABuFg8gnP2JrcLhobsvTkhd6cjmEvJnSHFfVZsRxhsiEX1ffbLyVBI7dRqf_jSaCuLT8_Uq4gs0hYJXbfcOoiZH2dgVv9Wequ3N7y5_5cS45UPAcnPyWxMuPgC3XJuokDHVxS62ZC_4bGxmEVll837qYJ69V74j1kFF92QY_9eah2b9oF7KPHjW4wk2BeUw-GJd37lufgOv6qJ-_zcMUrh5SYEwwl3dmr2lAJNFok4kZZAYSEhbeKVlx7NNRT1cLpMNte8vzyq2e7AzsIAS7LEszXMOD-JIwXs0nhL1A-96Ry3PoyPsmIijMAwNdn9VYl38YA5p3T7mzHx4wXxXdcuSrqBrDmnj6UINjegJUpzJ6Zc1_F0Zf_YY8zuoTbAp51JjHJ0=s512" alt="Metals Image">
+            <h3>Metals & Metal Working</h3>
+            <p>Learn about metals in science and history.</p>
+            <a href="metals.html" target="_blank">Take Quiz</a>
+        </div>
+
+        <div class="category">
+            <img src="https://lh3.googleusercontent.com/fife/ALs6j_GEz-hQLZKqfaXaJ1X2B8cVcd6a_eLLrUAPGwybUOcQ720Rvywx0Vm_1Uxi-yt7tu8SHkWk4YRjhChUVPsEuTx_BUjjRuqi9ozNdg2PPEpRJMNkKkEAqx4VOB7isJx8wyVuSnlUGjNy_U2uLkDvaRH-qfvKLe7psVZKFRyuCWQHg21AWpgRcWA4cSDUiW2xe5LGA-vEq-nvxNYMI243eMEZvaITEG63OMq-WKpsGIgGgWaAOx8YigVGWAK-rVVngpKO2hrDEcSTzUgCSNm7JZR-6byDp7DMDxviAAHYCJr4V2hBIM1msL7h8i1Yv3_evQ_yh7GPj0DNqgAq5WbgqhGFR2w_WvcQ4BJl3YkInbugU6RTqXqJBE4OTU-HJo5qicyidG1hgqPsZBw4xC6dqmI0KNfkI1FlMFP_yFJ_tfP7eff6K9RiZSC9Z-rJ4VImQkke1OZ9EeVUKwdRwDAIKT5WxHWtE6jLl8YPEmRiOYSjipZlRo-_XRGzhqhMEnrKHNlKsHNQFaLqmJOu3P4231eRdE7ACWfmF1XDcLvy9LaCJOQLtwAHArSPsDxFOu1mhQd0oKXw4yGR5YdHNuC610-8hPoxA77K-_4zIHUSn2LB27kj1ZIbipFKrc2zXkd46sYig2JQE09b5LyjigMFCXCKq1tyIk5Ob7-MeI4vnKmFzyEFN4InTu2Dj3WE9dpUw-cOjTPjaT14eqfGDKziCa-gvyckZvl5zOpseSend_nnl7XUhv4SzkLTxmjeEqTLigAJd6pW-M77tdoMkkj8JUSJ3Lio6RSzcr3hNhHCyF2YAJFl6_01YS2O1NH5cRdWj7Q1FXys_xibxcyVJQf9u4gDbS3OCbtujxHEB6QmS7U9dgJcPAGrTMTl4xoYWN6Ue0ljVgSU41HnHOcRTpt-bO8wwkH194O7R-O-yP8EyybX0F40YsGZYcw3p09QhhwZV1GZRhEszn7nqFBAPFMaK-Aw83k4HEOkIyRpPBkRrEAqoB3DP_ztaWWIb1dRLgji--hUcQzgNNZ9Bki1kRHAYmhlKnSDE7oFkuF0hLLELK1Yr5eGIFRhykpFvM2Ze_nq0uVrCyjKIWfq-8PDgG_NrH0rnfqB0uMVgbEj32mVTyFw3EyogHiaqg51OaQu9bunFNcduul1b6-la0nM9KEtvuBW9ge-FkcNh6p1ITEgH-SgaTmgFFuHOwzWw_lbL4sz9YrdUj3pyNp476umWFNb_xzPeaxp48MXcsQhI-yjQupTfSm5ZzR4FjkBWiBO_oYbXyuUUDPy8q8jAiQw57T-WPkkHPDOunhpx2P_3Y3J-CsyF4reqiHxS6VEXWRI6czRd-cShbXV7x6M6nIvIPLlCRn12f_-MJ7NUF91eQ80qs6GAxapFg-5NNVr9hYSPLSaQKflOQaOo0NwAHMPrAh2FYxRq8sLNzjFDZlRA_HL7_E2sKrrJTa1-0U9fN9J41NeBzmZphtTy2PPrCeR8L3zqeDlJgDIwvJGz8Id46wckPWaJYYY4lAUX_VZhgXKb1onHM7pvKBR4JRevB1zl6Q7KOA83QclrYRw3shDsXM3tI-m4ucL=s512" alt="Townsplan Image">
+            <h3>Town Planning & Architecture</h3>
+            <p>Quiz on Town Planning & Architecture in Ancient India.</p>
+            <a href="townsplan.html" target="_blank">Take Quiz</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 Untold Mysteries
+    </footer>
+</body>
+</html>

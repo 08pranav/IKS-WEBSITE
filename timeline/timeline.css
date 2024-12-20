@@ -1,0 +1,197 @@
+/* Gradient Background for Body */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    min-height: 100vh; /* Ensure the body takes at least the full height of the viewport */
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    background: linear-gradient(45deg, #FF8C42, #D64550, #F4D06F, #2B3A67, #008080);
+    background-size: 400% 400%; /* Smooth transitions for gradient */
+    animation: gradientAnimation 12s ease infinite; /* Slow gradient animation */
+}
+
+/* Gradient animation for background */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Header Styling */
+header {
+    background-color: #8B4513;
+    color: #ffffff; /* White text color for contrast */
+    padding: 20px;
+    position: relative; /* Position relative for absolute positioning of the button */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Adding shadow for header */
+}
+
+/* Back button in the header */
+.back-button {
+    position: absolute; /* Position the button absolutely */
+    top: 20px; /* Distance from the top */
+    left: 20px; /* Distance from the left */
+    padding: 10px 15px;
+    background-color: #5B3A29; /* Darker shade for better visibility */
+    color: white;
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #3B2A1D; /* Darker shade on hover */
+}
+
+/* Header title styling */
+h1 {
+    text-align: center;
+    margin: 0;
+    flex-grow: 1;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Main Content Section */
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: transparent;
+}
+
+/* Card container and layout */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+    margin: 0 auto;
+    max-width: 1200px; /* Limit max width for better alignment */
+}
+
+/* Individual card design */
+.card {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 12px; /* Rounded corners */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 1 1 200px;
+    max-width: 300px;
+    text-decoration: none;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Card hover effect */
+.card:hover {
+    transform: translateY(-5px); /* Lift card on hover */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+}
+
+/* Image inside the card */
+.card-image {
+    width: 100%;
+    height: auto;
+    border-radius: 12px 12px 0 0;
+    transition: transform 0.3s ease;
+}
+
+.card:hover .card-image {
+    transform: scale(1.05); /* Slightly enlarge the image */
+}
+
+/* Card titles */
+h2 {
+    color: #333;
+    margin: 15px 0 10px;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+/* Card descriptions */
+p {
+    color: #555;
+    line-height: 1.5;
+    font-size: 0.95rem;
+    text-align: justify;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(139, 69, 19, 0.8); /* Semi-transparent footer */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    z-index: 1;
+}
+
+/* Footer text */
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    body {
+        background: linear-gradient(45deg, #FF8C42, #D64550, #F4D06F, #2B3A67, #008080);
+        background-size: 400% 400%;
+        animation: gradientAnimation 10s ease infinite;
+    }
+
+    .card-container {
+        flex-direction: column; /* Stack cards vertically */
+        align-items: center;
+        gap: 10px;
+    }
+
+    .card {
+        max-width: 90%; /* Expand cards for smaller screens */
+    }
+
+    h1 {
+        font-size: 1.5rem; /* Smaller header on mobile */
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}
+
+/* General reset for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style for anchor links (cards) */
+.card a {
+    display: block;
+    text-decoration: none;
+}
+
+/* Style for links inside the card */
+.card a:hover {
+    color: inherit;
+}
+
+/* Box-shadow hover effect */
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
+}

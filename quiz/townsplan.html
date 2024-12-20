@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Town planning & Architecture Quiz</title>
+    <!-- Include Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Gotu&display=swap" rel="stylesheet">
+    <style>
+        /* General body styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Gotu', sans-serif;
+            background-image: url('https://www.mistay.in/travel-blog/content/images/2020/06/varanasi.jpg');
+            background-position: center;
+            background-size: cover;
+            
+            height: 100vh;
+        }
+
+        /* Title bar styles */
+        .title-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            z-index: 10;
+        }
+
+        /* Style for the iframe container */
+        .form-container {
+            margin-top: 60px; /* Ensures form starts below the title */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 60px); /* Account for title bar height */
+        }
+
+        /* Style for the iframe */
+        iframe {
+            border: none;
+            width: 90%;
+            height: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <!-- Title Bar -->
+    <div class="title-bar">
+        Town planning & Architecture Quiz
+    </div>
+
+    <!-- Embed Google Form -->
+    <div class="form-container">
+        <iframe 
+            src="https://docs.google.com/forms/d/e/1FAIpQLSfFuA1ekod-T5_6LDHXKKjJCIDvkSKcnqn9KZlgVbgvq9eYjA/viewform?embedded=true" width="1080" height="8565" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </iframe>
+    </div>
+</body>
+</html>

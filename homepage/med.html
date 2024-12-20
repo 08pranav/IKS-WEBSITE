@@ -1,0 +1,190 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicine - Ancient India's Achievements</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3e5ab; 
+            color: #2c2c2c;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(to right, #6d3f04, #c89021);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        }
+
+        .content {
+            padding: 40px 20px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            color: #7c4700;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+
+        .achievements-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .achievements {
+            background-color: #fdf6e3;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            flex: 1 1 calc(33% - 40px); 
+            max-width: calc(33% - 40px);
+            box-sizing: border-box;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .achievements:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .achievements h3 {
+            color: #7c4700;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+
+        .achievements p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+
+        .read-more {
+            text-decoration: none;
+            color: white;
+            background-color: #7c4700;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-align: center;
+            margin-top: 15px;
+            transition: background-color 0.3s ease;
+        }
+
+        .read-more:hover {
+            background-color: #a35c00;
+        }
+
+      
+        @media (max-width: 768px) {
+            .achievements {
+                flex: 1 1 calc(50% - 20px); 
+                max-width: calc(50% - 20px);
+            }
+
+            h2 {
+                font-size: 1.8em; 
+            }
+
+            .content {
+                padding: 20px;
+            }
+
+            .read-more {
+                padding: 12px 25px; 
+            }
+        }
+
+        @media (max-width: 480px) {
+            .achievements {
+                flex: 1 1 100%; 
+                max-width: 100%;
+            }
+
+            h2 {
+                font-size: 1.6em;
+            }
+
+            .content {
+                padding: 15px;
+            }
+
+            .read-more {
+                padding: 10px 20px;
+                font-size: 1em;
+            }
+        }
+
+        footer {
+            background-color: #4a2e00; 
+            color: #f8f3e7;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 40px;
+            font-size: 1em;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .back-button {
+            display: block;
+            text-decoration: none;
+            color: white;
+            background-color: #7c4700;
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-align: center;
+            max-width: 220px;
+            margin: 25px auto;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #a35c00;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Medicine - Ancient India's Achievements</h1>
+    </header>
+
+    <div class="content">
+        <h2>Key Achievements in Medicine</h2>
+
+        <div class="achievements-container">
+            <div class="achievements">
+                <h3>Charaka</h3>
+                <p>Charaka was one of the principal contributors to the development of Ayurveda. His work on the Charaka Samhita provided a comprehensive guide to diagnosing and treating various diseases, emphasizing the use of natural remedies and lifestyle changes for maintaining health.</p>
+            </div>
+
+            <div class="achievements">
+                <h3>Sushruta</h3>
+                <p>Sushruta is often referred to as the 'father of surgery.' His text, the Sushruta Samhita, is one of the oldest and most detailed texts on surgery. He is known for pioneering surgical techniques such as cataract removal and plastic surgery.</p>
+            </div>
+
+            <div class="achievements">
+                <h3>Herbal Remedies</h3>
+                <p>Ancient Indian medicine extensively utilized herbal remedies for various ailments. The use of plants such as Ashwagandha, Tulsi, and Neem for healing and prevention was a key aspect of Ayurveda.</p>
+            </div>
+        </div>
+
+        <div class="nav-buttons">
+            <a href="#" class="back-button">Learn More</a>
+            <a href="home.html" class="back-button">Back to Home</a>
+        </div>
+    </div>
+
+
+</body>
+</html>
